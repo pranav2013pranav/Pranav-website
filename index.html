@@ -1,4 +1,84 @@
-
-      
-   
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranav | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#050816;color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 8%;background:#080d20;border-bottom:1px solid #00f0ff;position:sticky;top:0;z-index:10}
+.logo{font-size:25px;font-weight:bold;color:#00f0ff;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:18px}
+nav a{color:#fff;text-decoration:none;transition:.3s}
+nav a:hover{color:#00f0ff}
+.hero{min-height:490px;padding:90px 10%;display:flex;justify-content:space-between;align-items:center;gap:30px;background:radial-gradient(circle at right,#14235b,#050816 65%)}
+.hello{color:#00f0ff;letter-spacing:4px}
+.hero h1{font-size:clamp(42px,7vw,68px);margin:15px 0}
+.hero h1 span,.section-title span{color:#00f0ff;text-shadow:0 0 18px #00f0ff}
+.hero h2{color:#b4c7ff;margin-bottom:18px}
+.hero-content>p:last-of-type{line-height:1.8;max-width:500px;color:#dbeafe}
+.hero-icon{font-size:clamp(70px,12vw,130px);color:#00f0ff;text-shadow:0 0 35px #00f0ff;border:3px solid #00f0ff;border-radius:50%;padding:35px;animation:glow 2s infinite alternate}
+.btn{display:inline-block;margin-top:25px;padding:13px 25px;color:#050816;background:#00f0ff;border-radius:30px;text-decoration:none;font-weight:bold;transition:.3s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 25px #00f0ff}
+section:not(.hero){padding:70px 10%}
+.section-title{text-align:center;font-size:35px;margin-bottom:38px}
+.about-box{display:flex;align-items:center;gap:30px;padding:32px;border:1px solid #00f0ff;border-radius:15px;background:#0b1229;box-shadow:0 0 15px #00f0ff22}
+.about-box p{line-height:1.9;color:#cbd5e1}
+.about-icon{font-size:65px;color:#00f0ff;padding:15px}
+.skills-grid,.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skill{padding:28px;text-align:center;border:1px solid #00f0ff;border-radius:12px;background:#0b1229;font-size:20px;font-weight:bold;transition:.3s}
+.skill:hover{background:#00f0ff;color:#050816;transform:translateY(-6px);box-shadow:0 0 20px #00f0ff}
+.project-card{background:#0b1229;padding:27px;border:1px solid #5541a8;border-radius:15px;transition:.3s}
+.project-card:hover{border-color:#00f0ff;transform:translateY(-6px);box-shadow:0 0 20px #00f0ff33}
+.project-card h3{color:#00f0ff;margin-bottom:13px}
+.project-card p{color:#cbd5e1;line-height:1.6}
+.project-card span{display:inline-block;margin-top:18px;color:#00f0ff}
+.contact-box{text-align:center;padding:35px;background:#0b1229;border:1px solid #00f0ff;border-radius:15px;line-height:2}
+footer{text-align:center;padding:25px;background:#080d20;border-top:1px solid #00f0ff;color:#b4c7ff}
+@keyframes glow{from{box-shadow:0 0 10px #00f0ff}to{box-shadow:0 0 40px #00f0ff}}
+@media(max-width:768px){header{flex-direction:column;gap:18px}.hero{flex-direction:column;text-align:center;padding:65px 7%}.hero-content>p:last-of-type{margin:auto}.about-box{flex-direction:column;text-align:center}.skills-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:1fr}section:not(.hero){padding:55px 7%}}
+@media(max-width:420px){.skills-grid{grid-template-columns:1fr}nav{justify-content:center;gap:12px}nav a{font-size:14px}}
+</style>
+</head>
+<body>
+<header>
+<a href="#home" class="logo">&lt;/&gt; Pranav</a>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="hero" id="home">
+<div class="hero-content">
+<p class="hello">HELLO, WORLD!</p>
+<h1>I'm <span>Pranav</span></h1>
+<h2>Future Software Engineer</h2>
+<p>I love coding, building creative websites and exploring new technologies.</p>
+<a href="#projects" class="btn">Explore My Projects</a>
+</div>
+<div class="hero-icon">&lt;/&gt;</div>
+</section>
+<section id="about">
+<h2 class="section-title">About <span>Me</span></h2>
+<div class="about-box"><div class="about-icon">&lt;/&gt;</div>
+<p>Hi! I'm Pranav. I am passionate about technology and programming. I enjoy learning HTML, CSS, Python and JavaScript. My dream is to become a successful Software Engineer and build amazing things with code.</p></div>
+</section>
+<section id="skills">
+<h2 class="section-title">My <span>Skills</span></h2>
+<div class="skills-grid"><div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div><div class="skill">Python</div><div class="skill">C++</div><div class="skill">GitHub</div></div>
+</section>
+<section id="projects">
+<h2 class="section-title">My <span>Projects</span></h2>
+<div class="projects-grid">
+<div class="project-card"><h3>Calculator App</h3><p>A simple calculator project.</p><span>Coming Soon</span></div>
+<div class="project-card"><h3>Notes App</h3><p>A simple notes application.</p><span>Coming Soon</span></div>
+<div class="project-card"><h3>My Portfolio</h3><p>My personal portfolio website.</p><span>My First Website</span></div>
+</div>
+</section>
+<section id="contact">
+<h2 class="section-title">Contact <span>Me</span></h2>
+<div class="contact-box"><p>Thanks for visiting my portfolio!</p><p>Let's learn, create and build something amazing.</p><a href="mailto:your-email@example.com" class="btn">Email Me</a></div>
+</section>
+<footer>© 2026 Pranav | Keep Learning & Keep Coding!</footer>
+</body>
+</html>
